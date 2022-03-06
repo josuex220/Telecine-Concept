@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:keepScreenOn="true"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+
+    tools:context=".activities.TrailerActivity">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="2dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_top_player"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/backMenu"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#00FFFFFF"
+                android:drawableStart="@drawable/ic_back_menu"
+                android:drawableLeft="@drawable/ic_back_menu" />
+        </LinearLayout>
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimary"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>
